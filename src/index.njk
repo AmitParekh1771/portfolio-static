@@ -1,0 +1,134 @@
+---
+layout: default.njk
+---
+<section id="hero-container" class="px-5 relative min-h-[90vh] flex justify-center items-center">
+    <div data-sky-grad="night" class="overflow-hidden absolute z-0 inset-0 transition-opacity duration-500 night"></div>
+    <div data-sky-grad="evening" class="overflow-hidden absolute z-0 inset-0 transition-opacity duration-500 evening"></div>
+    <div data-sky-grad="morning" class="overflow-hidden absolute z-0 inset-0 transition-opacity duration-500 morning"></div>
+    <div class="overflow-hidden absolute z-0 inset-0">
+        <button type="button" id="theme-btn" class="absolute h-20 w-20 rounded-full top-[10%] left-[10%] text-[#fff6e2] bg-current transition-colors duration-500 shadow-[0px_0px_80px_0px] shadow-current origin-center select-none click-bait" aria-label="Theme toggle button"></button>
+    </div>
+    <div class="overflow-x-hidden absolute z-0 bottom-0 w-full">
+        <div class="grid grid-cols-[repeat(2,100%)] min-w-[80rem] clouds">
+            <img src="/assets/images/clouds.svg" height="318" width="1713" class="w-full min-w-[80rem] object-cover select-none" alt="clouds">
+            <img src="/assets/images/clouds.svg" height="318" width="1713" class="w-full min-w-[80rem] object-cover select-none" alt="clouds">
+        </div>
+    </div>
+    <div class="overflow-x-hidden absolute z-0 bottom-0 w-full flex justify-center">
+        <img src="/assets/images/beach.svg" height="148" width="1755" class="w-full min-w-[80rem] object-cover select-none" alt="beach background">
+    </div>
+    <div class="max-w-screen-md z-0 mx-auto my-16 text-center dark:text-gray-100 transition-colors duration-500">
+        <h1 class="text-5xl lg:text-7xl font-bold mb-16 leading-[1.1]">I don't build Websites<br/>I craft Experiences</h1>
+        <p class="text-xl sm:text-2xl max-w-lg mx-auto">WARNING! This site may cause uncontrollable Oohs and Aahs</p>
+    </div>
+</section>
+<section class="px-5 bg-black text-slate-50">
+    <div class="max-w-screen-lg mx-auto pt-10 pb-5 grid grid-cols-1 lg:grid-cols-2 gap-x-10">
+        <div class="h-fit sticky my-20 top-40 hidden lg:block">
+            <ul>
+                <li><a href="#disclaimer" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="disclaimer">Disclaimer</h2></a></li>
+                <li><a href="#design" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="design">Design</h2></a></li>
+                <li><a href="#performance" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="performance">Performance</h2></a></li>
+                <li><a href="#integration" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="integration">Integration</h2></a></li>
+                <li><a href="#customization" class="transition-opacity duration-300 text-5xl font-bold inline-block uppercase select-none"><h2 aria-label="customization">Customization</h2></a></li>
+            </ul>
+        </div>
+        <div class="curtains">
+            <div data-fragment="disclaimer" id="disclaimer" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
+                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Disclaimer</h2>
+                <div class="flex justify-center mb-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="#f3ca20" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                </div>
+                <div class="text-center text-2xl uppercase text-slate-100">all claims made on this site are not fictitious. the site developer is not responsible if it blows your mind off or stoles your heart.</div>
+            </div>
+            <div data-fragment="design" id="design" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
+                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Design</h2>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I like to challenge conventional design and you might have noticed on this page.</div>
+                <div class="text-3xl uppercase font-bold mb-16">I speak story via design...<br>Let me craft it for you too!</div>
+                <div class="flex gap-1 sm:gap-4 items-center mb-16 text-center">
+                    <div class="font-handwriting sm:text-2xl">your<br>story</div>
+                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
+                    <div class="font-handwriting sm:text-2xl">figma<br>design</div>
+                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
+                    <div class="font-handwriting sm:text-2xl">clean<br>code</div>
+                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
+                    <div class="font-handwriting sm:text-2xl">goes<br>live</div>
+                </div>
+                <div>
+                    <ul class="pl-6 list-disc text-xl sm:text-2xl text-slate-100">
+                        <li class="pl-1 mb-4">Day 1: I study you</li>
+                        <li class="pl-1 mb-4">Day 2: I craft you a story via design</li>
+                        <li class="pl-1 mb-4">Day 3: Review and improve</li>
+                        <li class="pl-1 mb-4">Day 4: I develop complete site</li>
+                        <li class="pl-1">Day 5: Your website goes live</li>
+                    </ul>
+                </div>
+            </div>
+            <div data-fragment="performance" id="performance" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
+                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Performance</h2>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">When performance is concerned...</div>
+                <div class="text-3xl uppercase mb-16"><span class="font-thin line-through text-slate-100">never compromise</span><br><span class="font-bold">always #1</span></div>
+                <div class="flex flex-col items-center mb-8">
+                    <img src="/assets/images/performance.webp" class="rounded-lg w-full mb-2" height="80" width="500" alt="performance report" loading="lazy">
+                    <span class="text-center italic text-slate-300">Chrome report of my portfolio site</span>
+                </div>
+                <div class="flex justify-between">
+                    <div></div>
+                    <div class="flex gap-8">
+                        <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1C1 10.3333 6.3 29 27.5 29C48.7 29 34 24.3333 24 22V36L37.5 30.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="text-2xl font-handwriting text-slate-100">This is what<br>satisfies me!</span>
+                    </div>
+                </div>
+            </div>
+            <div data-fragment="integration" id="integration" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
+                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Integration</h2>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">Whatever you need, whenever you need...</div>
+                <div class="text-3xl font-bold uppercase mb-16">Integrate your site with any of your favorite tools</div>
+                <div class="max-w-[30rem] mx-auto">
+                    <img src="/assets/images/integrations.svg" class="mb-8 w-full select-none" height="272" width="480" alt="integrations" loading="lazy">
+                    <div class="mb-16 grid grid-cols-5 gap-x-10 items-center justify-items-center font-extrabold select-none">
+                        <span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span><span>·</span>
+                    </div>
+                </div>
+                <div class="text-center font-handwriting text-xl sm:text-2xl text-slate-100">Possibilities are endless</div>
+            </div>
+            <div data-fragment="customization" id="customization" class="flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
+                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Customization</h2>
+                <div class="text-xl sm:text-2xl italic mb-8 text-slate-100">"Will I be able to customize site myself?"</div>
+                <div class="text-3xl font-bold uppercase mb-8">YES, absolutely!</div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I'll provide solution what your business exactly need -</div>
+                <div>
+                    <ul class="pl-6 list-disc text-xl sm:text-2xl text-slate-100">
+                        <li class="pl-1 mb-4">Full Customization (no code)</li>
+                        <li class="pl-1 mb-4">Data Customization (low code)</li>
+                        <li class="pl-1">No Customization (code)</li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<section class="px-5 bg-black text-slate-50">
+    <div class="max-w-screen-md mx-auto text-center py-40">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-16">You are extraordinary...<br>And so your website should be!</h2>
+        <div class="text-xl sm:text-2xl max-w-lg mx-auto mb-16 text-slate-100">Let's craft a digital haven where stories resonate, voices amplify, and souls connect.</div>
+        <div class="flex gap-8 justify-center items-center">
+            <div>
+                <a href="https://twitter.com/messages/compose?recipient_id=&ref_src=twsrc%5Etfw" class="block p-6 sm:p-8 text-3xl sm:text-4xl rounded-full bg-slate-50 mb-2 select-none" aria-label="DM">
+                    <svg width="1em" height="1em" viewBox="0 0 41 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40.8154 22.4641C40.8151 23.0418 40.661 23.609 40.3689 24.1074C40.0767 24.6057 39.6572 25.0174 39.1533 25.2999L4.84282 44.5139C4.26652 44.8407 3.60353 44.9821 2.94403 44.9189C2.28452 44.8556 1.66049 44.5908 1.15681 44.1604C0.648394 43.7356 0.283196 43.1645 0.110911 42.5247C-0.0613741 41.885 -0.0323781 41.2077 0.193953 40.585L6.08537 24.0891H21.3914C21.8223 24.0891 22.2357 23.9179 22.5404 23.6131C22.8452 23.3084 23.0164 22.8951 23.0164 22.4641C23.0164 22.0331 22.8452 21.6198 22.5404 21.315C22.2357 21.0103 21.8223 20.8391 21.3914 20.8391H6.08537L0.193953 4.34311C-0.0285637 3.71999 -0.0555992 3.04381 0.11646 2.40492C0.288519 1.76603 0.651475 1.19488 1.15682 0.767784C1.66217 0.340692 2.28583 0.0780107 2.94446 0.0148463C3.60309 -0.048318 4.26531 0.0910432 4.84262 0.414305L39.1535 19.6283C39.6573 19.9108 40.0768 20.3225 40.3689 20.8209C40.661 21.3192 40.8151 21.8864 40.8154 22.4641Z" fill="black"/></svg>
+                </a>
+                <span class="text-2xl text-slate-100">DM</span>
+            </div>
+            <div class="text-4xl transform translate-y-[-1.5rem]">/</div>
+            <div>
+                <a href="mailto:parekhamit04@gmail.com" class="block p-6 sm:p-8 text-3xl sm:text-4xl rounded-full bg-white mb-2 select-none" aria-label="Email">
+                    <svg width="1em" height="1em" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.6875 0C2.09961 0 0 2.09961 0 4.6875C0 6.16211 0.693359 7.54883 1.875 8.4375L23.125 24.375C24.2383 25.2051 25.7617 25.2051 26.875 24.375L48.125 8.4375C49.3066 7.54883 50 6.16211 50 4.6875C50 2.09961 47.9004 0 45.3125 0H4.6875ZM0 10.9375V31.25C0 34.6973 2.80273 37.5 6.25 37.5H43.75C47.1973 37.5 50 34.6973 50 31.25V10.9375L28.75 26.875C26.5234 28.5449 23.4766 28.5449 21.25 26.875L0 10.9375Z" fill="black"/></svg>
+                </a>
+                <span class="text-2xl text-slate-100">Email</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="px-5 bg-black text-slate-100">
+    <div class="max-w-screen-md mx-auto py-16 text-center text-xl sm:text-2xl">© 2023 Amit Parekh · All right reserved</div>
+</section>

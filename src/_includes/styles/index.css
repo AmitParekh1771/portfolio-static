@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* latin */
+@font-face {
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/rock-salt.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}  
+
+::selection { color: #ffffff; background-color: #1DA1F2; }
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button { background-color: transparent; height: 0; }
+::-webkit-scrollbar-track { background-color: black;}
+::-webkit-scrollbar-track-piece { background-color: black;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: rgb(156 163 175); border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: black;}
+::-webkit-resizer { background-color: rgb(156 163 175);}
+
+.evening { background-image: linear-gradient(180deg, #53B17F 1.45%, #DFD3A5 52.54%, #EAC497 68.89%, #F5B489 81.9%, #E26060 96.97%); }
+.morning { background-image: linear-gradient(180deg, #44C1C9 1.45%, #7FD8E4 52.54%, #97E5EA 68.89%, #B5ECF3 81.9%, #E3FEFB 96.97%); }
+.night { background-image: linear-gradient(180deg, #000 1.45%, #022022 52.54%, #052224 68.89%, #042428 81.9%, #042E29 96.97%); }
+
+.clouds { animation: left-move-loop 180s linear 0s infinite forwards; }
+@keyframes left-move-loop {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.curtains { position: relative; }
+.curtains::before, .curtains::after { content: ''; position: sticky; display: block; width: 100%; height: 5rem; }
+@media screen and (min-width: 1024px) {
+    .curtains::before { top: 0; background: linear-gradient(180deg, black, transparent); }
+    .curtains::after { bottom: 0; background: linear-gradient(0deg, black, transparent); }
+}
+
+@keyframes set-and-rise { 
+    0% { top: 10%; }
+    50% { top: 100%; }
+    50.1% { top: -20%; }
+    100% { top: 10%; }
+}
+
+.click-bait { animation: click-bait 5s linear 0s infinite forwards; }
+@keyframes click-bait {
+    0% { transform: scale(1); }
+    48% { transform: scale(1); }
+    49% { transform: scale(0.8); }
+    50% { transform: scale(1); }
+    51% { transform: scale(0.8); }
+    52% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
