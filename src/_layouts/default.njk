@@ -30,13 +30,11 @@
     <link rel="preload" href="/assets/images/clouds.svg" as="image">
     <link rel="preload" href="/assets/fonts/rock-salt.woff2" as="font" crossorigin>
     
-    <style>{% set css %}{% include "styles/index.css" %}{% endset %}{{ css | postcss | safe }}</style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="overflow-y-scroll">
-    <main data-content>
-        {{ content | safe }}
-    </main>
+    {{ content | safe }}
     
-    <script>{% set js %}{% include "scripts/index.js" %}{% endset %}{{ js | jsmin | safe }}</script>
+    <script src="/main.js" async></script>
 </body>
 </html>

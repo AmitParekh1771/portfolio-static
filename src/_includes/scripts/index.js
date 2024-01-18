@@ -18,7 +18,7 @@ const fragmentObserver = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll("[data-fragment]").forEach(item => fragmentObserver.observe(item));
 
 const themes = ["morning", "evening", "night"];
-const themeColors = ["#fff6e2", "#ffffa8", "#f3f4f6"];
+const themeColors = ["#fff6e2", "#ffffa8", "#d6efee"];
 let currentThemeIndex = 0;
 
 const themeBtn = document.getElementById("theme-btn");
@@ -26,7 +26,6 @@ const heroContainer = document.getElementById("hero-container");
 const skyGrads = document.querySelectorAll("[data-sky-grad]");
 
 themeBtn.addEventListener("click", (ev) => {
-    let prevThemeIndex = currentThemeIndex;
     currentThemeIndex = (currentThemeIndex + 1) % 3;
 
     themeBtn.style.animation = `set-and-rise 500ms ease-in-out 0s 1 forwards`;

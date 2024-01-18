@@ -1,11 +1,11 @@
 module.exports = {
 	lang: "en",
-	name: "Portfolio Static",
-	title: "Portfolio Static - Amit Parekh",
+	name: "Amit Parekh",
+	title: "Amit Parekh - Craft A Stunning Web Experience",
 	keywords: "web, design, portfolio",
-	url: "https://portfolio-static.netlify.app",
+	url: "https://amit-parekh.netlify.app",
 	type: "website",
-	description: "I don't create websites, I craft experiences.",
+	description: "I'll Turn Your Boring Website Into A Stunning Web Experience That Takes <1s To Load",
 	image: "/assets/images/featuredImage.webp",
 	favicon: "/assets/icons/favicon.ico",
 	author: {

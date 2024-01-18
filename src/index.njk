@@ -6,7 +6,7 @@ layout: default.njk
     <div data-sky-grad="evening" class="overflow-hidden absolute z-0 inset-0 transition-opacity duration-500 evening"></div>
     <div data-sky-grad="morning" class="overflow-hidden absolute z-0 inset-0 transition-opacity duration-500 morning"></div>
     <div class="overflow-hidden absolute z-0 inset-0">
-        <button type="button" id="theme-btn" class="absolute h-20 w-20 rounded-full top-[10%] left-[10%] text-[#fff6e2] bg-current transition-colors duration-500 shadow-[0px_0px_80px_0px] shadow-current origin-center select-none click-bait" aria-label="Theme toggle button"></button>
+        <button type="button" id="theme-btn" class="absolute h-16 w-16 rounded-full top-[10%] left-[10%] text-[#fff6e2] bg-current transition-colors duration-500 shadow-[0px_0px_80px_0px] shadow-current origin-center select-none click-bait" aria-label="Theme toggle button"></button>
     </div>
     <div class="overflow-x-hidden absolute z-0 bottom-0 w-full">
         <div class="grid grid-cols-[repeat(2,100%)] min-w-[80rem] clouds">
@@ -17,61 +17,80 @@ layout: default.njk
     <div class="overflow-x-hidden absolute z-0 bottom-0 w-full flex justify-center">
         <img src="/assets/images/beach.svg" height="148" width="1755" class="w-full min-w-[80rem] object-cover select-none" alt="beach background">
     </div>
-    <div class="max-w-screen-md z-0 mx-auto my-16 text-center dark:text-gray-100 transition-colors duration-500">
-        <h1 class="text-5xl lg:text-7xl font-bold mb-16 leading-[1.1]">I don't build Websites<br/>I craft Experiences</h1>
-        <p class="text-xl sm:text-2xl max-w-lg mx-auto">WARNING! This site may cause uncontrollable Oohs and Aahs</p>
+    <div class="z-0 max-w-[60rem] mx-auto my-16 text-center transition-colors duration-500">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl dark:text-[#d6efee] font-bold mb-16 md:leading-[1.2] lg:leading-[1.2]">I'll Turn Your Boring Website Into A Stunning Web Experience That Takes &lt;1s To Load</h1>
+        <a href="#contact" class="px-10 py-5 font-medium md:py-6 rounded-full text-lg md:text-xl text-gray-50 bg-black dark:text-[#042122] dark:bg-[#d6efee] uppercase">Contact</a>
     </div>
 </section>
 <section class="px-5 bg-black text-slate-50">
-    <div class="max-w-screen-lg mx-auto pt-10 pb-5 grid grid-cols-1 lg:grid-cols-2 gap-x-10">
-        <div class="h-fit sticky my-20 top-40 hidden lg:block">
-            <ul>
-                <li><a href="#disclaimer" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="disclaimer">Disclaimer</h2></a></li>
-                <li><a href="#design" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="design">Design</h2></a></li>
-                <li><a href="#performance" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="performance">Performance</h2></a></li>
-                <li><a href="#integration" class="transition-opacity duration-300 text-5xl font-bold mb-8 inline-block uppercase select-none"><h2 aria-label="integration">Integration</h2></a></li>
-                <li><a href="#customization" class="transition-opacity duration-300 text-5xl font-bold inline-block uppercase select-none"><h2 aria-label="customization">Customization</h2></a></li>
+    <div class="max-w-screen-lg mx-auto pt-40 pb-28">
+        <h2 class="text-4xl lg:text-5xl text-center lg:text-left font-black uppercase mb-16">Your website<br>struggle is real</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-x-10 gap-y-36">
+            <div class="max-w-[30rem]">
+                <div class="flex lg:flex-col lg:justify-start justify-center gap-2 font-bold mb-8"><span aria-disabled="true" class="font-black opacity-25 text-7xl">1</span><h3 class="text-3xl uppercase">Design looks<br>identical?</h3></div>
+                <div class="flex items-center justify-center lg:justify-start min-h-24 mb-8"><img src="/assets/images/similar.svg" loading="lazy" width="100" height="88" alt="illustrative icon"></div>
+                <div class="text-xl md:text-2xl mb-6">If you can use an existing design template, so others can!</div>
+                <div class="text-xl md:text-2xl italic">How would you differentiate yourself as a brand?</div>
+            </div>
+            <div class="max-w-[30rem]">
+                <div class="flex lg:flex-col lg:justify-start justify-center gap-2 font-bold mb-8"><span aria-disabled="true" class="font-black opacity-25 text-7xl">2</span><h3 class="text-3xl uppercase">Website is too<br>slow to load?</h3></div>
+                <div class="flex items-center justify-center lg:justify-start min-h-24 mb-8"><img src="/assets/images/triple-arrows.svg" loading="lazy" width="161" height="84" alt="illustrative icon"></div>
+                <div class="text-xl md:text-2xl mb-6">Each 1 second delay to load website decreases conversion rate by 17%.</div>
+                <div class="text-xl md:text-2xl italic">How would you build reliability as a brand?</div>
+            </div>
+            <div class="max-w-[30rem]">
+                <div class="flex lg:flex-col lg:justify-start justify-center gap-2 font-bold mb-8"><span aria-disabled="true" class="font-black opacity-25 text-7xl">3</span><h3 class="text-3xl uppercase">Can't integrate<br>business tools?</h3></div>
+                <div class="flex items-center justify-center lg:justify-start min-h-24 mb-8"><img src="/assets/images/plus-multiply.svg" loading="lazy" width="173" height="84" alt="illustrative icon"></div>
+                <div class="text-xl md:text-2xl mb-6">Integration of business tool increases your productivity by 10X.</div>
+                <div class="text-xl md:text-2xl italic">How would you automate w\o integration as a brand?</div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-screen-lg mx-auto pt-40 pb-28 grid grid-cols-1 lg:grid-cols-2 gap-x-10">
+        <div class="h-fit lg:sticky lg:top-32">
+            <h2 class="text-4xl lg:text-5xl text-center lg:text-left font-black uppercase mb-16">Here is how<br>I can help you</h2>
+            <ul class="hidden lg:block">
+                <li><a href="#strategy" class="transition-opacity duration-300 text-4xl font-bold mb-8 inline-block uppercase select-none"><h3 aria-disabled="true">1. Strategy</h3></a></li>
+                <li><a href="#design" class="transition-opacity duration-300 text-4xl font-bold mb-8 inline-block uppercase select-none"><h3 aria-disabled="true">2. Design</h3></a></li>
+                <li><a href="#development" class="transition-opacity duration-300 text-4xl font-bold mb-8 inline-block uppercase select-none"><h3 aria-disabled="true">3. Development</h3></a></li>
+                <li><a href="#integration" class="transition-opacity duration-300 text-4xl font-bold mb-8 inline-block uppercase select-none"><h3 aria-disabled="true">4. Integration</h3></a></li>
+                <li><a href="#launch" class="transition-opacity duration-300 text-4xl font-bold inline-block uppercase select-none"><h3 aria-disabled="true">5. Launch</h3></a></li>
             </ul>
         </div>
-        <div class="curtains">
-            <div data-fragment="disclaimer" id="disclaimer" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
-                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Disclaimer</h2>
-                <div class="flex justify-center mb-16">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="#f3ca20" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
-                </div>
-                <div class="text-center text-2xl uppercase text-slate-100">all claims made on this site are not fictitious. the site developer is not responsible if it blows your mind off or stoles your heart.</div>
-            </div>
-            <div data-fragment="design" id="design" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
-                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Design</h2>
-                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I like to challenge conventional design and you might have noticed on this page.</div>
-                <div class="text-3xl uppercase font-bold mb-16">I speak story via design...<br>Let me craft it for you too!</div>
-                <div class="flex gap-1 sm:gap-4 items-center mb-16 text-center">
-                    <div class="font-handwriting sm:text-2xl">your<br>story</div>
-                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
-                    <div class="font-handwriting sm:text-2xl">figma<br>design</div>
-                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
-                    <div class="font-handwriting sm:text-2xl">clean<br>code</div>
-                    <div class="flex-grow h-0 border-b-4 border-dotted border-current"></div>
-                    <div class="font-handwriting sm:text-2xl">goes<br>live</div>
-                </div>
+        <div>
+            <div data-fragment="strategy" id="strategy" class="mb-36 lg:mb-96 flex flex-col max-w-[30rem] mx-auto scroll-mt-40">
+                <h3 class="text-4xl text-center font-bold uppercase lg:hidden mb-8"><span class="opacity-25">1.</span> Strategy</h3>
+                <div class="flex justify-center items-center min-h-24 mb-8"><img src="/assets/images/strategy.svg" loading="lazy" width="161" height="100" alt="illustration icon"></div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">To craft best web experience for you...</div>
+                <div class="text-3xl uppercase font-bold mb-12">I'll first learn about you!</div>
                 <div>
                     <ul class="pl-6 list-disc text-xl sm:text-2xl text-slate-100">
-                        <li class="pl-1 mb-4">Day 1: I study you</li>
-                        <li class="pl-1 mb-4">Day 2: I craft you a story via design</li>
-                        <li class="pl-1 mb-4">Day 3: Review and improve</li>
-                        <li class="pl-1 mb-4">Day 4: I develop complete site</li>
-                        <li class="pl-1">Day 5: Your website goes live</li>
+                        <li class="pl-1 mb-4">Analyze website requirements</li>
+                        <li class="pl-1 mb-4">Estimate goals of website</li>
+                        <li class="pl-1">Wireframe website</li>
                     </ul>
                 </div>
             </div>
-            <div data-fragment="performance" id="performance" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
-                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Performance</h2>
-                <div class="text-xl sm:text-2xl mb-8 text-slate-100">When performance is concerned...</div>
-                <div class="text-3xl uppercase mb-16"><span class="font-thin line-through text-slate-100">never compromise</span><br><span class="font-bold">always #1</span></div>
-                <div class="flex flex-col items-center mb-8">
-                    <img src="/assets/images/performance.webp" class="rounded-lg w-full mb-2" height="80" width="500" alt="performance report" loading="lazy">
-                    <span class="text-center italic text-slate-300">Chrome report of my portfolio site</span>
+            <div data-fragment="design" id="design" class="mb-36 lg:mb-96 flex flex-col max-w-[30rem] mx-auto scroll-mt-40">
+                <h3 class="text-4xl text-center font-bold uppercase lg:hidden mb-10"><span class="opacity-25">2.</span> Design</h3>
+                <div class="flex justify-center items-center min-h-24 mb-8"><img src="/assets/images/figma.svg" loading="lazy" width="67" height="100" alt="illustration icon"></div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I'll design website using Figma, where you'll be able to monitor progress.</div>
+                <div class="text-3xl uppercase font-bold mb-12">Transparent process!</div>
+                <div class="flex flex-col items-center mb-8"><img src="/assets/images/design-variants.webp" class="rounded-lg w-full mb-2" height="198" width="480" alt="multiple design variations" loading="lazy"></div>
+                <div class="flex justify-between">
+                    <div></div>
+                    <div class="flex gap-8">
+                        <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1C1 10.3333 6.3 29 27.5 29C48.7 29 34 24.3333 24 22V36L37.5 30.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="text-2xl font-handwriting text-slate-100">Multiple design<br>variations</span>
+                    </div>
                 </div>
+            </div>
+            <div data-fragment="development" id="development" class="mb-36 lg:mb-96 flex flex-col max-w-[30rem] mx-auto scroll-mt-40">
+                <h3 class="text-4xl text-center font-bold uppercase lg:hidden mb-10"><span class="opacity-25">3.</span> Development</h3>
+                <div class="flex justify-center items-center min-h-24 mb-8"><img src="/assets/images/code.svg" loading="lazy" width="340" height="96"  alt="illustration icon"></div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I'll write highly optimized mobile responsive code.</div>
+                <div class="text-3xl uppercase font-bold mb-12">99% is my lowest lighthouse audit score!</div>
+                <div class="flex flex-col items-center mb-8"><img src="/assets/images/performance.webp" class="rounded-lg w-full mb-2" height="290" width="480" alt="performance report" loading="lazy"></div>
                 <div class="flex justify-between">
                     <div></div>
                     <div class="flex gap-8">
@@ -80,10 +99,11 @@ layout: default.njk
                     </div>
                 </div>
             </div>
-            <div data-fragment="integration" id="integration" class="mb-96 flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
-                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Integration</h2>
-                <div class="text-xl sm:text-2xl mb-8 text-slate-100">Whatever you need, whenever you need...</div>
-                <div class="text-3xl font-bold uppercase mb-16">Integrate your site with any of your favorite tools</div>
+            <div data-fragment="integration" id="integration" class="mb-36 lg:mb-96 flex flex-col max-w-[30rem] mx-auto scroll-mt-40">
+                <h3 class="text-4xl text-center font-bold uppercase lg:hidden mb-10"><span class="opacity-25">4.</span> Integration</h3>
+                <div class="flex justify-center items-center min-h-24 mb-8"><img src="/assets/images/xy.svg" loading="lazy" width="217" height="96" alt="illustration icon"></div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">You demand, I implement...</div>
+                <div class="text-3xl font-bold uppercase mb-12">Integration with your favorite business tools!</div>
                 <div class="max-w-[30rem] mx-auto">
                     <img src="/assets/images/integrations.svg" class="mb-8 w-full select-none" height="272" width="480" alt="integrations" loading="lazy">
                     <div class="mb-16 grid grid-cols-5 gap-x-10 items-center justify-items-center font-extrabold select-none">
@@ -92,26 +112,23 @@ layout: default.njk
                 </div>
                 <div class="text-center font-handwriting text-xl sm:text-2xl text-slate-100">Possibilities are endless</div>
             </div>
-            <div data-fragment="customization" id="customization" class="flex flex-col max-w-screen-sm mx-auto scroll-mt-40">
-                <h2 class="text-4xl text-center font-bold uppercase lg:hidden mb-10">Customization</h2>
-                <div class="text-xl sm:text-2xl italic mb-8 text-slate-100">"Will I be able to customize site myself?"</div>
-                <div class="text-3xl font-bold uppercase mb-8">YES, absolutely!</div>
-                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I'll provide solution what your business exactly need -</div>
-                <div>
-                    <ul class="pl-6 list-disc text-xl sm:text-2xl text-slate-100">
-                        <li class="pl-1 mb-4">Full Customization (no code)</li>
-                        <li class="pl-1 mb-4">Data Customization (low code)</li>
-                        <li class="pl-1">No Customization (code)</li>
-                    </ul>
-                </div>  
+            <div data-fragment="launch" id="launch" class="flex flex-col max-w-[30rem] mx-auto scroll-mt-40">
+                <h3 class="text-4xl text-center font-bold uppercase lg:hidden mb-10"><span class="opacity-25">5.</span> Launch</h3>
+                <div class="flex justify-center items-center min-h-24 mb-8"><img src="/assets/images/rocket.svg" loading="lazy" width="100" height="100" alt="illustration icon"></div>
+                <div class="text-xl sm:text-2xl mb-8 text-slate-100">I'll launch your website on CDN.</div>
+                <div class="text-3xl font-bold uppercase mb-12">99.99% uptime. high speed. Highly secure. Lower cost.</div>
+                <div class="flex flex-wrap gap-8 justify-center items-center">
+                    <img src="/assets/images/netlify.svg" loading="lazy" width="118" height="48" alt="illustration icon">
+                    <img src="/assets/images/vercel.svg" loading="lazy" width="126" height="48" alt="illustration icon">
+                    <img src="/assets/images/cloudfare.svg" loading="lazy" width="146" height="48" alt="illustration icon">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="px-5 bg-black text-slate-50">
+<section id="contact" class="px-5 bg-black text-slate-50">
     <div class="max-w-screen-md mx-auto text-center py-40">
-        <h2 class="text-4xl sm:text-5xl font-bold mb-16">You are extraordinary...<br>And so your website should be!</h2>
-        <div class="text-xl sm:text-2xl max-w-lg mx-auto mb-16 text-slate-100">Let's craft a digital haven where stories resonate, voices amplify, and souls connect.</div>
+        <h2 class="text-4xl sm:text-5xl font-bold mb-16">You are just a DM away from a solution that will skyrocket your business</h2>
         <div class="flex gap-8 justify-center items-center">
             <div>
                 <a href="https://twitter.com/messages/compose?recipient_id=&ref_src=twsrc%5Etfw" class="block p-6 sm:p-8 text-3xl sm:text-4xl rounded-full bg-slate-50 mb-2 select-none" aria-label="DM">
@@ -130,5 +147,5 @@ layout: default.njk
     </div>
 </section>
 <section class="px-5 bg-black text-slate-100">
-    <div class="max-w-screen-md mx-auto py-16 text-center text-xl sm:text-2xl">© 2023 Amit Parekh · All right reserved</div>
+    <div class="max-w-screen-md mx-auto py-16 text-center text-lg sm:text-xl">© 2024 Amit Parekh · All right reserved</div>
 </section>
